@@ -1,0 +1,227 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Md Abdul Aziz}{Zisan}{\href{mailto:binabdulaziz49983@gmail.com}{binabdulaziz4983@gmail.com} | +8801754399662
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Daffodil Int'l University}
+Ashulia, Dhaka\\
+\descript{BSC in CSE}
+\location{Jan 2022 - Present}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Facebook:// \href{https://facebook.com/mdabdulazizzisan}{\bf mdabdulazizzisan} \\
+Github:// \href{https://github.com/mdabdulazizzisan}{\bf mdabdulazizzisan} \\
+LinkedIn://  \href{https://www.linkedin.com/in/mdabdulazizzisan}{\bf mdabdulazizzisan} \\
+YouTube://  \href{ https://www.youtube.com/@FreeAltSoftwareTutorials }{\bf FAST} \\
+Twitter://  \href{https://twitter.com/abdulazizzisan}{\bf @abdulazizzisan} \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Undergraduate}
+Algorithms\\
+Data Structure\\
+Object Oriented Programming (I, II)\\
+System Design \& Analysis
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{Languages:}
+\textbullet{} Kotlin \textbullet{} Java \\
+\textbullet{} Python \textbullet{} C \\
+\textbullet{} Linux Shell \\
+\textbullet{}\LaTeX\ \\ 
+\location{Tools:}
+\textbullet{} Git \textbullet{} Github \\
+\textbullet{} Linux CLI \textbullet{} Android Studio\\
+\location{Libraries | Frameworks:}
+\textbullet{} Android SDK
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Medicinal Leaf Classification}
+\descript{| Android Deployment }
+\location{Research Collaboration | 2024}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Deployed Tensor Flow tflite Machine Learning model on android.
+\item \textbf{Technologies learned: } Recycler View, Room Database, Kotlin Coroutines
+\end{tightemize}
+\sectionsep
+
+\runsubsection{\href{https://www.youtube.com/@FreeAltSoftwareTutorials}{FAST}}
+\descript{| Content Creator | Tutor}
+\location{ 2021 - Present | Bangladesh}
+\begin{tightemize}
+\item Free Alternative Software Tutorials - FAST is a YouTube channel where I share my knowledge about Linux and other open source projects.
+\item Influenced and Taught multiple students to learn and use Linux and other open source software. [Physically and Online]
+\item Learned \& taught Ubuntu, Linux Mint, Shell Commands, Google searching etc. 
+\end{tightemize}
+\sectionsep
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+
+\runsubsection{Calculator app}
+\descript{| Developer}
+\location{2024}
+\begin{tightemize}
+\item Learned \& implemented the basic Fundamentals of Android Development: \\
+\quad \textbullet{} Kotlin \textbullet{} XML \\
+\quad \textbullet{} Android Studio \\
+\end{tightemize}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Rankings} 
+\begin{tabular}{rll}
+2018	 & 7\textsuperscript{th}/200   & Inter School Typing Competition\\
+2022	 & 15\textsuperscript{th}/600  & DIU Take Off Programming Contest Preliminary Round \\
+2022	 & 79\textsuperscript{th}/800  & DIU Take Off Programming Contest Main Round \\
+\end{tabular}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Non Academic Courses
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Non-academics}
+\runsubsection{Courses}
+\begin{tightemize} 
+\item \href{https://www.udemy.com/course/pygame-dungeon-crawler/?referralCode=C1B3B7636B26BC1A7F1B&couponCode=ST15MT31224}{Udemy: Complete Pygame Tutorial - Create a Dungeon Crawler}
+\item \href{https://www.udemy.com/certificate/UC-b3157d51-19c3-4510-a924-2206bc5a0903/}{Udemy: Master Git and Github - Beginner to Expert}
+\end{tightemize}
+\sectionsep
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% \section{Publications} 
+% \renewcommand\refname{\vskip -1.5em} % Couldn't get this working from the .cls file
+% \bibliographystyle{abbrv}
+% \bibliography{publications}
+% \nocite{*}
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
